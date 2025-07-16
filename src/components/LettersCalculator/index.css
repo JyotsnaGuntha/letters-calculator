@@ -1,0 +1,90 @@
+/* Write your code here. */
+.app-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Roboto';
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: transparent;
+  border-radius: 12px;
+}
+
+.text-section {
+  flex: 1;
+  background-color: transparent;
+  padding-right: 30px;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.input {
+  padding: 12px 16px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 360px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.input::placeholder {
+  color: #e4e7eb;
+}
+
+.letter-count {
+  background-color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 20px;
+  color: #219a6f;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.calculator-img {
+  width: 450px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-section {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .calculator-img {
+    width: 300px;
+  }
+}
